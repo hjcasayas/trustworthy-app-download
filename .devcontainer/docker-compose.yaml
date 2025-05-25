@@ -1,0 +1,8 @@
+services:
+  dev-container-ts:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    volumes:
+      - ../:/workspaces/dev-container-ts:cached
+    command: sleep infinity

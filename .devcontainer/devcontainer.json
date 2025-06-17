@@ -7,11 +7,6 @@
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
   "mounts": [
     {
-      "source": "${localWorkspaceFolderBasename}-node_modules",
-      "target": "${containerWorkspaceFolder}/node_modules",
-      "type": "volume"
-    },
-    {
       "source": "${localEnv:HOME}/.ssh",
       "target": "/home/node/.ssh",
       "type": "bind"
@@ -24,10 +19,11 @@
         "esbenp.prettier-vscode",
         "rvest.vs-code-prettier-eslint",
         "christian-kohler.path-intellisense",
-        "humao.rest-client",
-        "ms-azuretools.vscode-docker"
+        "ms-azuretools.vscode-docker",
+        "GitHub.copilot",
+        "GitHub.copilot-chat"
       ]
     }
   },
-  "postCreateCommand": "sudo chown node node_modules && npm install"
+  "postCreateCommand": "sudo chown node node_modules"
 }

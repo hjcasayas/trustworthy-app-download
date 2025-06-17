@@ -3,7 +3,7 @@
 {
   "name": "Dev Container for TS",
   "dockerComposeFile": "docker-compose.yaml",
-  "service": "dev-container-ts",
+  "service": "dev-container",
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
   "mounts": [
     {

@@ -4,6 +4,10 @@ Drive downloads with this sleek app template. One page with all the key info—b
 
 ## Production
 
+1. Frontend (Next.js) - WIP
+1. Headless CMC (Strapi) - WIP
+1. [Figma Design](https://www.figma.com/community/file/1498087976362579412/trustworthy-app-download)
+
 ## Technologies used
 
 1. Next.js
@@ -29,3 +33,7 @@ Drive downloads with this sleek app template. One page with all the key info—b
 5. Open Strapi app in http://localhost:1337
 
 ## Todos
+
+- [ ] Generate NextJS app using create-next-app@latest
+- [ ] Generate Strapi app use create-strapi@latest
+- [ ] Setup Tailwind CSS Theme based on Figma

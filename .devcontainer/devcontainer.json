@@ -1,10 +1,8 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
 {
-  "name": "Dev Container for TS",
+  "name": "Trustworthy App Download Dev Container",
   "dockerComposeFile": "docker-compose.yaml",
   "service": "dev-container",
-  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "workspaceFolder": "/workspaces/trustworthy-app-download",
   "mounts": [
     {
       "source": "${localEnv:HOME}/.ssh",
@@ -25,5 +23,5 @@
       ]
     }
   },
-  "postCreateCommand": "sudo chown node node_modules"
+  "postCreateCommand": "sudo chown node node_modules && sudo chmod +x ./.devcontainer/install.sh && ./.devcontainer/install.sh"
 }

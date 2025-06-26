@@ -17,9 +17,11 @@
         "esbenp.prettier-vscode",
         "rvest.vs-code-prettier-eslint",
         "christian-kohler.path-intellisense",
+        "humao.rest-client",
         "ms-azuretools.vscode-docker",
         "GitHub.copilot",
-        "GitHub.copilot-chat"
+        "GitHub.copilot-chat",
+        "bradlc.vscode-tailwindcss"
       ]
     }
   },

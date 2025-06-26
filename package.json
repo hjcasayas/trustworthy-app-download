@@ -1,7 +1,7 @@
 {
   "name": "trustworthy-app-download",
   "version": "1.0.0",
-  "description": "A landing page designed to inform users about the importance of downloading apps from trustworthy sources.",
+  "description": "Drive downloads with this sleek app template. One page with all the key info—built for conversion.",
   "scripts": {
     "git:commit": "cz",
     "lint-staged": "lint-staged"

@@ -73,3 +73,11 @@
 @utility link {
   @apply tablet:text-[0.71875rem] tablet:leading-[1.15] desktop:text-xs text-[0.6875rem] font-medium leading-tight -tracking-[0.02em];
 }
+
+@utility link-1 {
+  @apply link text-accent-1 hover:underline;
+}
+
+@utility btn {
+  @apply paragraph bg-accent-1 hover:bg-[#619111];
+}

@@ -98,6 +98,12 @@ importers:
 
   apps/frontend:
     dependencies:
+      "@tanstack/react-query":
+        specifier: ^5.81.2
+        version: 5.81.2(react@19.1.0)
+      graphql-request:
+        specifier: ^7.2.0
+        version: 7.2.0(graphql@16.11.0)
       next:
         specifier: 15.3.4
         version: 15.3.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -3522,6 +3528,20 @@ packages:
       {
         integrity: sha512-q/EAIIpF6WpLhKEuQSEVMZNMIY8KhWoAemZ9eylNAih9jxMGAYPPWBn3I9QL/2jZ+e7OEz/tZkX5HwbBR4HohA==,
       }
+
+  "@tanstack/query-core@5.81.2":
+    resolution:
+      {
+        integrity: sha512-QLYkPdrudoMATDFa3MiLEwRhNnAlzHWDf0LKaXUqJd0/+QxN8uTPi7bahRlxoAyH0UbLMBdeDbYzWALj7THOtw==,
+      }
+
+  "@tanstack/react-query@5.81.2":
+    resolution:
+      {
+        integrity: sha512-pe8kFlTrL2zFLlcAj2kZk9UaYYHDk9/1hg9EBaoO3cxDhOZf1FRGJeziSXKrVZyxIfs7b3aoOj/bw7Lie0mDUg==,
+      }
+    peerDependencies:
+      react: ^18 || ^19
 
   "@testing-library/dom@10.1.0":
     resolution:
@@ -7287,6 +7307,14 @@ packages:
       }
     peerDependencies:
       koa: ^2
+
+  graphql-request@7.2.0:
+    resolution:
+      {
+        integrity: sha512-0GR7eQHBFYz372u9lxS16cOtEekFlZYB2qOyq8wDvzRmdRSJ0mgUVX1tzNcIzk3G+4NY+mGtSz411wZdeDF/+A==,
+      }
+    peerDependencies:
+      graphql: 14 - 16
 
   graphql-scalars@1.22.2:
     resolution:
@@ -13787,18 +13815,6 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  "@formatjs/intl@2.10.0(typescript@5.4.4)":
-    dependencies:
-      "@formatjs/ecma402-abstract": 1.18.2
-      "@formatjs/fast-memoize": 2.2.0
-      "@formatjs/icu-messageformat-parser": 2.7.6
-      "@formatjs/intl-displaynames": 6.6.6
-      "@formatjs/intl-listformat": 7.5.5
-      intl-messageformat: 10.5.11
-      tslib: 2.8.1
-    optionalDependencies:
-      typescript: 5.4.4
-
   "@formatjs/intl@2.10.0(typescript@5.8.3)":
     dependencies:
       "@formatjs/ecma402-abstract": 1.18.2
@@ -16077,6 +16093,13 @@ snapshots:
       "@tailwindcss/oxide": 4.1.11
       postcss: 8.5.6
       tailwindcss: 4.1.11
+
+  "@tanstack/query-core@5.81.2": {}
+
+  "@tanstack/react-query@5.81.2(react@19.1.0)":
+    dependencies:
+      "@tanstack/query-core": 5.81.2
+      react: 19.1.0
 
   "@testing-library/dom@10.1.0":
     dependencies:
@@ -18703,6 +18726,11 @@ snapshots:
       graphql-playground-html: 1.6.30
       koa: 2.16.1
 
+  graphql-request@7.2.0(graphql@16.11.0):
+    dependencies:
+      "@graphql-typed-document-node/core": 3.2.0(graphql@16.11.0)
+      graphql: 16.11.0
+
   graphql-scalars@1.22.2(graphql@16.11.0):
     dependencies:
       graphql: 16.11.0
@@ -20645,7 +20673,7 @@ snapshots:
     dependencies:
       "@formatjs/ecma402-abstract": 1.18.2
       "@formatjs/icu-messageformat-parser": 2.7.6
-      "@formatjs/intl": 2.10.0(typescript@5.4.4)
+      "@formatjs/intl": 2.10.0(typescript@5.8.3)
       "@formatjs/intl-displaynames": 6.6.6
       "@formatjs/intl-listformat": 7.5.5
       "@types/hoist-non-react-statics": 3.3.6

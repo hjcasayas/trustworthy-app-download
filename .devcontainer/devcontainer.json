@@ -25,5 +25,5 @@
       ]
     }
   },
-  "postCreateCommand": "sudo chown node node_modules .pnpm-store apps/frontend/node_modules apps/frontend/.next && sudo chmod +x ./.devcontainer/install.sh && ./.devcontainer/install.sh"
+  "postCreateCommand": "sudo chown node node_modules .pnpm-store apps/frontend/node_modules apps/frontend/.next apps/cms/node_modules apps/cms/dist apps/cms/.strapi apps/cms/types && sudo chmod +x ./.devcontainer/install.sh && ./.devcontainer/install.sh"
 }

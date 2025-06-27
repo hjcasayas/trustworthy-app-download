@@ -130,3 +130,6 @@ dist
 
 # pnpm store
 .pnpm-store/
+
+# MacOS
+.DS_Store

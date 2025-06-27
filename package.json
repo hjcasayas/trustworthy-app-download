@@ -7,6 +7,9 @@
     "dev:frontend": "pnpm --filter @trustworthy-app-download/frontend run dev",
     "build:frontend": "pnpm --filter @trustworthy-app-download/frontend run build",
     "start:frontend": "pnpm --filter @trustworthy-app-download/frontend run start",
+    "dev:cms": "pnpm --filter @trustworthy-app-download/cms run dev",
+    "build:cms": "pnpm --filter @trustworthy-app-download/cms run build",
+    "start:cms": "pnpm --filter @trustworthy-app-download/cms run start",
     "git:commit": "cz",
     "lint-staged": "lint-staged"
   },

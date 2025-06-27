@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_common_websites",
+  "info": {
+    "displayName": "Website"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    }
+  },
+  "config": {}
+}

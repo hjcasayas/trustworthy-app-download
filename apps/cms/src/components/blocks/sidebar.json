@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_blocks_sidebars",
+  "info": {
+    "displayName": "Sidebar"
+  },
+  "options": {},
+  "attributes": {
+    "website": {
+      "type": "component",
+      "component": "common.website",
+      "repeatable": false,
+      "required": true
+    },
+    "cta": {
+      "type": "component",
+      "component": "common.link",
+      "repeatable": false
+    },
+    "headline": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "offerings": {
+      "type": "component",
+      "component": "sidebar.offerings",
+      "repeatable": false,
+      "required": true
+    },
+    "contactLinks": {
+      "type": "component",
+      "component": "common.link",
+      "repeatable": true,
+      "required": true
+    }
+  },
+  "config": {}
+}

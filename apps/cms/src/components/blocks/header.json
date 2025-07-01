@@ -11,17 +11,23 @@
       "required": true,
       "allowedTypes": ["images"]
     },
-    "logos": {
-      "type": "media",
-      "multiple": true,
-      "required": true,
-      "allowedTypes": ["images"]
-    },
     "headlines": {
       "type": "component",
       "component": "common.text",
       "repeatable": true,
       "required": true
+    },
+    "logos1": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "logos2": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": ["images"]
     }
   },
   "config": {}

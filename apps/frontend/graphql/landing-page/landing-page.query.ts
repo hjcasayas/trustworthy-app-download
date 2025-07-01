@@ -58,11 +58,19 @@ export const landingPageQuery = gql`
             id
             text
           }
-          logos {
+          logos1 {
             alternativeText
             url
             height
             width
+            documentId
+          }
+          logos2 {
+            alternativeText
+            url
+            height
+            width
+            documentId
           }
         }
       }

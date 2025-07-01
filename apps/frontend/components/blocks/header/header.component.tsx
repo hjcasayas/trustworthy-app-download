@@ -12,7 +12,7 @@ export const HeaderBlockComponent = ({
 }: HeaderBlock) => {
   return (
     <header className="desktop:w-3/5 desktop:items-start flex flex-col">
-      <div className="tablet:px-10 tablet:gap-y-[3.125rem] desktop:w-[760px] flex w-full flex-col gap-y-[1.5625rem] px-5 pt-[3.125rem]">
+      <div className="tablet:px-10 tablet:gap-y-[3.125rem] desktop:w-[47.5rem] flex w-full flex-col gap-y-[1.5625rem] px-5 pt-[3.125rem]">
         <div className="tablet:h-[23.8125rem] relative h-[25rem] w-full overflow-clip rounded-[1.25rem]">
           <ImageLoader
             priority

@@ -1,5 +1,5 @@
-import { BlockRendererProps } from "../blocks-renderer/blocks-renderer.component";
+import { StrapiBlock } from "../strapi/strapi-block";
 
 export interface LandingPageSingle {
-  blocks: BlockRendererProps;
+  blocks: StrapiBlock[];
 }

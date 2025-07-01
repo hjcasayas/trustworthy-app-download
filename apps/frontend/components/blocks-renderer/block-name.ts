@@ -1,5 +1,4 @@
 export const BlockNames = {
-  ComponentBlocksSidebar: "ComponentBlocksSidebar",
   ComponentBlocksHeader: "ComponentBlocksHeader",
 } as const;
 

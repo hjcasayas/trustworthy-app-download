@@ -11,9 +11,15 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "sidebar": {
+      "type": "component",
+      "component": "blocks.sidebar",
+      "repeatable": false,
+      "required": true
+    },
     "blocks": {
       "type": "dynamiczone",
-      "components": ["blocks.sidebar", "blocks.header"],
+      "components": ["blocks.header"],
       "required": true
     }
   }

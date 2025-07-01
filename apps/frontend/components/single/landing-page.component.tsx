@@ -4,6 +4,7 @@ import { landingPageQuery } from "@/graphql/landing-page/landing-page.query";
 import { LandingPageSingle } from "./landing-page.interface";
 import { useReactQuery } from "@/hooks/use-react-query.hook";
 import { BlockRenderer } from "../blocks-renderer/blocks-renderer.component";
+import { SidebarBlockComponent } from "../blocks/sidebar/sidebar.component";
 
 export const LandingPageComponent = () => {
   const { data, isLoading, isError } = useReactQuery<{
@@ -25,5 +26,10 @@ export const LandingPageComponent = () => {
     return <p>Error loading landing page</p>;
   }
 
-  return <BlockRenderer blocks={data.landingPage.blocks} />;
+  return (
+    <div className="desktop:flex-row desktop:justify-center flex flex-col">
+      <SidebarBlockComponent {...data.landingPage.sidebar} />
+      <BlockRenderer blocks={data.landingPage.blocks} />
+    </div>
+  );
 };

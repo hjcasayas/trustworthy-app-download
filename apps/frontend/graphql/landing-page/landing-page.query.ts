@@ -46,6 +46,8 @@ export const landingPageQuery = gql`
           }
         }
         ... on ComponentBlocksHeader {
+          __typename
+          id
           hero {
             alternativeText
             url

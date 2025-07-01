@@ -21,7 +21,9 @@ export const landingPageQuery = gql`
             url
             isExternal
           }
-          headline
+          headline1
+          headline2
+          headline3
           description
           offerings {
             title

@@ -8,7 +8,9 @@ export interface SidebarBlockLink extends CommonLink, StrapiBase {}
 export interface SidebarBlock {
   website: CommonWebsite;
   cta: CommonLink;
-  headline: string;
+  headline1: string;
+  headline2: string;
+  headline3: string;
   description: string;
   offerings: SidebarOfferings;
   contactLinks: SidebarBlockLink[];

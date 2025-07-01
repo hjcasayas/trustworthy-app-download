@@ -11,15 +11,17 @@
       "required": true,
       "allowedTypes": ["images"]
     },
-    "headline": {
-      "type": "string",
-      "required": true
-    },
     "logos": {
       "type": "media",
       "multiple": true,
       "required": true,
       "allowedTypes": ["images"]
+    },
+    "headlines": {
+      "type": "component",
+      "component": "common.text",
+      "repeatable": true,
+      "required": true
     }
   },
   "config": {}

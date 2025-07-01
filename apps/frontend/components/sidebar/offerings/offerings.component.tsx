@@ -11,7 +11,10 @@ export const SidebarOfferingsComponent = ({
       <h2 className="text-accent-1 link font-medium">{title}</h2>
       <ul className="flex flex-row gap-x-[0.625rem]">
         {navigationLinks.map(({ label, url, id, icon }) => (
-          <li key={id} className="bg-accent-3 text-background-1 w-1/3">
+          <li
+            key={id}
+            className="bg-accent-3 text-background-1 w-1/3 rounded-sm"
+          >
             <Link
               className="flex flex-col items-center justify-center gap-y-[0.875rem] px-[0.625rem] py-5"
               href={url}

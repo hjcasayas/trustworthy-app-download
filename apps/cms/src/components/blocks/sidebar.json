@@ -16,7 +16,15 @@
       "component": "common.link",
       "repeatable": false
     },
-    "headline": {
+    "headline1": {
+      "type": "string",
+      "required": true
+    },
+    "headline2": {
+      "type": "string",
+      "required": true
+    },
+    "headline3": {
       "type": "string",
       "required": true
     },

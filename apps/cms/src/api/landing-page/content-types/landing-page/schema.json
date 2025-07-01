@@ -13,7 +13,7 @@
   "attributes": {
     "blocks": {
       "type": "dynamiczone",
-      "components": ["blocks.sidebar"],
+      "components": ["blocks.sidebar", "blocks.header"],
       "required": true
     }
   }

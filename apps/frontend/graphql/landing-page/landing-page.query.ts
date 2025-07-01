@@ -45,6 +45,24 @@ export const landingPageQuery = gql`
             url
           }
         }
+        ... on ComponentBlocksHeader {
+          hero {
+            alternativeText
+            url
+            height
+            width
+          }
+          headlines {
+            id
+            text
+          }
+          logos {
+            alternativeText
+            url
+            height
+            width
+          }
+        }
       }
     }
   }

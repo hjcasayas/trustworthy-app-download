@@ -25,7 +25,5 @@ export const LandingPageComponent = () => {
     return <p>Error loading landing page</p>;
   }
 
-  console.log("LandingPageComponent data:", data);
-
   return <BlockRenderer blocks={data.landingPage.blocks} />;
 };

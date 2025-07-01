@@ -1,5 +1,5 @@
-import { CommonLink } from "../common/link/link.interface";
-import { StrapiBase } from "../strapi/strapi-base";
+import { CommonLink } from "../../common/link/link.interface";
+import { StrapiBase } from "../../strapi/strapi-base";
 
 export interface NavigationLink extends CommonLink, StrapiBase {}
 

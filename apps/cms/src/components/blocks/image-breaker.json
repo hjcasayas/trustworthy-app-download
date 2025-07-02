@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_blocks_image_breakers",
+  "info": {
+    "displayName": "Image Breaker"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    }
+  },
+  "config": {}
+}

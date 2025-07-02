@@ -22,7 +22,8 @@
       "components": [
         "blocks.header",
         "blocks.get-more-done",
-        "blocks.reliable-app"
+        "blocks.reliable-app",
+        "blocks.image-breaker"
       ],
       "required": true
     }

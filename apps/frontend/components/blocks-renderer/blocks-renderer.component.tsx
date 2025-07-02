@@ -6,6 +6,10 @@ import {
   HeaderBlockComponent,
   HeaderBlockComponentProps,
 } from "../blocks/header/header.component";
+import {
+  ReliableAppBlockComponent,
+  ReliableAppBlockProps,
+} from "../blocks/releable-app/reliable-app.component";
 import { StrapiBlock } from "../strapi/strapi-block";
 import { BlockNames } from "./block-name";
 
@@ -20,10 +24,21 @@ export const BlockRenderer = ({ blocks }: { blocks: StrapiBlock[] }) => {
               <HeaderBlockComponent key={currentBlock.id} {...currentBlock} />
             );
           }
+
           case BlockNames.ComponentBlocksGetMoreDone: {
             const currentBlock = block as GetMoreDoneComponentProps;
             return (
               <GetMoreDoneComponent key={currentBlock.id} {...currentBlock} />
+            );
+          }
+
+          case BlockNames.ComponentBlocksReliableApp: {
+            const currentBlock = block as ReliableAppBlockProps;
+            return (
+              <ReliableAppBlockComponent
+                key={currentBlock.id}
+                {...currentBlock}
+              />
             );
           }
           default: {

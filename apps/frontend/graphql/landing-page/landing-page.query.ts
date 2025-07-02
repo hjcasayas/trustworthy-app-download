@@ -87,6 +87,22 @@ export const landingPageQuery = gql`
             }
           }
         }
+        ... on ComponentBlocksReliableApp {
+          __typename
+          id
+          headline
+          benefits {
+            id
+            title
+            description
+            image {
+              alternativeText
+              height
+              url
+              width
+            }
+          }
+        }
       }
     }
   }

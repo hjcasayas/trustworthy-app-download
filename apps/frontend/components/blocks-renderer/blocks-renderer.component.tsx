@@ -7,6 +7,10 @@ import {
   HeaderBlockComponentProps,
 } from "../blocks/header/header.component";
 import {
+  ImageBreakerBlockComponent,
+  ImageBreakerBlockComponentProps,
+} from "../blocks/image-breaker/image-breaker.component";
+import {
   ReliableAppBlockComponent,
   ReliableAppBlockProps,
 } from "../blocks/releable-app/reliable-app.component";
@@ -41,6 +45,17 @@ export const BlockRenderer = ({ blocks }: { blocks: StrapiBlock[] }) => {
               />
             );
           }
+
+          case BlockNames.ComponentBlocksImageBreaker: {
+            const currentBlock = block as ImageBreakerBlockComponentProps;
+            return (
+              <ImageBreakerBlockComponent
+                key={currentBlock.id}
+                {...currentBlock}
+              />
+            );
+          }
+
           default: {
             return null;
           }

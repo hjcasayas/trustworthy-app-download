@@ -71,6 +71,22 @@ export const landingPageQuery = gql`
             documentId
           }
         }
+        ... on ComponentBlocksGetMoreDone {
+          __typename
+          id
+          headline
+          description
+          cards {
+            id
+            text
+            icon {
+              alternativeText
+              url
+              width
+              height
+            }
+          }
+        }
       }
     }
   }

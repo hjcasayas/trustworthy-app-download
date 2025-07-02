@@ -1,6 +1,6 @@
 import { CommonLink } from "@/components/common/link/link.interface";
 import { CommonWebsite } from "@/components/common/website/website.interface";
-import { SidebarOfferings } from "@/components/sidebar/offerings/offerings.interface";
+import { SidebarOfferings } from "@/components/blocks/sidebar/offerings/offerings.interface";
 import { StrapiBase } from "@/components/strapi/strapi-base";
 
 export interface SidebarBlockLink extends CommonLink, StrapiBase {}

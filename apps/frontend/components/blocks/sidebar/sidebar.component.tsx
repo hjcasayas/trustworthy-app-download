@@ -1,7 +1,7 @@
-import { SidebarContactLinksComponent } from "@/components/sidebar/contact-links/contact-links.component";
-import { SidebarOfferingsComponent } from "@/components/sidebar/offerings/offerings.component";
-import { SidebarHeadlineComponent } from "@/components/sidebar/headline/headline.component";
-import { SidebarNavComponent } from "@/components/sidebar/nav/nav.component";
+import { SidebarContactLinksComponent } from "@/components/blocks/sidebar/contact-links/contact-links.component";
+import { SidebarOfferingsComponent } from "@/components/blocks/sidebar/offerings/offerings.component";
+import { SidebarHeadlineComponent } from "@/components/blocks/sidebar/headline/headline.component";
+import { SidebarNavComponent } from "@/components/blocks/sidebar/nav/nav.component";
 
 import { SidebarBlock } from "./sidebar.interface";
 

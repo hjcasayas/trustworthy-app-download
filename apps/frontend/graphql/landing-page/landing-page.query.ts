@@ -103,6 +103,16 @@ export const landingPageQuery = gql`
             }
           }
         }
+        ... on ComponentBlocksImageBreaker {
+          __typename
+          id
+          image {
+            alternativeText
+            url
+            width
+            height
+          }
+        }
       }
     }
   }

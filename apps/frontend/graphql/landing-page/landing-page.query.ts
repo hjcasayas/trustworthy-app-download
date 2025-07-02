@@ -106,7 +106,13 @@ export const landingPageQuery = gql`
         ... on ComponentBlocksImageBreaker {
           __typename
           id
-          image {
+          mobile {
+            alternativeText
+            url
+            width
+            height
+          }
+          tablet {
             alternativeText
             url
             width

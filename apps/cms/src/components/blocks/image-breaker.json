@@ -5,7 +5,13 @@
   },
   "options": {},
   "attributes": {
-    "image": {
+    "mobile": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images", "files"]
+    },
+    "tablet": {
       "type": "media",
       "multiple": false,
       "required": true,

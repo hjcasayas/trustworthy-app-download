@@ -19,7 +19,7 @@
     },
     "blocks": {
       "type": "dynamiczone",
-      "components": ["blocks.header"],
+      "components": ["blocks.header", "blocks.get-more-done"],
       "required": true
     }
   }

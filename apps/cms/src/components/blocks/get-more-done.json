@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_blocks_get_more_dones",
+  "info": {
+    "displayName": "Get More Done"
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "cards": {
+      "type": "component",
+      "component": "common.text-with-icon",
+      "repeatable": true,
+      "required": true
+    }
+  },
+  "config": {}
+}

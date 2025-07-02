@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_blocks_reliable_apps",
+  "info": {
+    "displayName": "Reliable App"
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "string",
+      "required": true
+    },
+    "benefits": {
+      "type": "component",
+      "component": "common.title-description-image",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

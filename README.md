@@ -4,8 +4,8 @@ Drive downloads with this sleek app template. One page with all the key info—b
 
 ## Production
 
-1. Frontend (Next.js) - WIP
-1. Headless CMC (Strapi) - WIP
+1. [Frontend](https://trustworthy-app-download.hjcasayas.info)
+1. [Strapi CMS](https://strapi-trustworthy-app-download.hjcasayas.info)
 1. [Figma Design](https://www.figma.com/community/file/1498087976362579412/trustworthy-app-download)
 
 ## Technologies used

@@ -28,6 +28,12 @@
         "blocks.cta-section"
       ],
       "required": true
+    },
+    "footer": {
+      "type": "component",
+      "component": "common.footer",
+      "repeatable": false,
+      "required": true
     }
   }
 }

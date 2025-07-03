@@ -157,6 +157,35 @@ export const landingPageQuery = gql`
           }
         }
       }
+      footer {
+        websiteName {
+          alternativeText
+          url
+          height
+          width
+        }
+        websiteLogo {
+          alternativeText
+          url
+          height
+          width
+        }
+        contactDetails {
+          title
+          links {
+            id
+            label
+            url
+            isExternal
+          }
+        }
+        policyLinks {
+          id
+          label
+          url
+          isExternal
+        }
+      }
     }
   }
 `;

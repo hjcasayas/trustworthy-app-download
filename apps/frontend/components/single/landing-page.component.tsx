@@ -5,6 +5,7 @@ import { LandingPageSingle } from "./landing-page.interface";
 import { useReactQuery } from "@/hooks/use-react-query.hook";
 import { BlockRenderer } from "../blocks-renderer/blocks-renderer.component";
 import { SidebarBlockComponent } from "../blocks/sidebar/sidebar.component";
+import { CommonFooterComponent } from "../common/footer/footer.component";
 
 export const LandingPageComponent = () => {
   const { data, isLoading, isError } = useReactQuery<{
@@ -30,6 +31,7 @@ export const LandingPageComponent = () => {
     <div className="desktop:flex-row desktop:justify-center flex flex-col">
       <SidebarBlockComponent {...data.landingPage.sidebar} />
       <BlockRenderer blocks={data.landingPage.blocks} />
+      <CommonFooterComponent {...data.landingPage.footer} />
     </div>
   );
 };

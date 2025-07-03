@@ -138,7 +138,7 @@ export const landingPageQuery = gql`
         ... on ComponentBlocksCtaSection {
           __typename
           id
-          Headline
+          headline
           cta {
             label
             url

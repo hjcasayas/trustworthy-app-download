@@ -24,7 +24,8 @@
         "blocks.get-more-done",
         "blocks.reliable-app",
         "blocks.image-breaker",
-        "blocks.first-class-software"
+        "blocks.first-class-software",
+        "blocks.cta-section"
       ],
       "required": true
     }

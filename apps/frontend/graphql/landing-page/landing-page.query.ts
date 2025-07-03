@@ -135,6 +135,27 @@ export const landingPageQuery = gql`
             }
           }
         }
+        ... on ComponentBlocksCtaSection {
+          __typename
+          id
+          Headline
+          cta {
+            label
+            url
+            icon {
+              alternativeText
+              url
+              height
+              width
+            }
+          }
+          image {
+            alternativeText
+            url
+            height
+            width
+          }
+        }
       }
     }
   }

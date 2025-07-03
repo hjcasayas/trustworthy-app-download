@@ -10,7 +10,7 @@ export const ReliableAppBlockComponent = ({
   benefits,
 }: ReliableAppBlockProps) => {
   return (
-    <section className="tablet:px-10 tablet:pt-20 tablet:pb-0 flex flex-col items-center gap-y-[30px] px-5 py-[50px]">
+    <section className="tablet:px-10 tablet:pt-20 tablet:pb-0 desktop:pb-20 flex flex-col items-center gap-y-[30px] px-5 py-[50px]">
       <h2 className="heading-1 text-heading">{headline}</h2>
       <ReliableAppBenefitsComponent {...{ benefits }} />
     </section>

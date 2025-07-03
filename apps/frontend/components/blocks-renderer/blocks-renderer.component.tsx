@@ -1,4 +1,8 @@
 import {
+  FirstClassSoftwareBlockComponent,
+  FirstClassSoftwareBlockComponentProps,
+} from "../blocks/first-class-software/first-class-software.component";
+import {
   GetMoreDoneComponent,
   GetMoreDoneComponentProps,
 } from "../blocks/get-more-done/get-more-done.component";
@@ -50,6 +54,16 @@ export const BlockRenderer = ({ blocks }: { blocks: StrapiBlock[] }) => {
             const currentBlock = block as ImageBreakerBlockComponentProps;
             return (
               <ImageBreakerBlockComponent
+                key={currentBlock.id}
+                {...currentBlock}
+              />
+            );
+          }
+
+          case BlockNames.ComponentBlocksFirstClassSoftware: {
+            const currentBlock = block as FirstClassSoftwareBlockComponentProps;
+            return (
+              <FirstClassSoftwareBlockComponent
                 key={currentBlock.id}
                 {...currentBlock}
               />

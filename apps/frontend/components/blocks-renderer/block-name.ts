@@ -3,6 +3,7 @@ export const BlockNames = {
   ComponentBlocksGetMoreDone: "ComponentBlocksGetMoreDone",
   ComponentBlocksReliableApp: "ComponentBlocksReliableApp",
   ComponentBlocksImageBreaker: "ComponentBlocksImageBreaker",
+  ComponentBlocksFirstClassSoftware: "ComponentBlocksFirstClassSoftware",
 } as const;
 
 export type BlockNameType = keyof typeof BlockNames;

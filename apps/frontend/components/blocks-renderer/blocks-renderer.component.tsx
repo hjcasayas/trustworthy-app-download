@@ -1,4 +1,8 @@
 import {
+  CtaSectionBlockComponent,
+  CtaSectionBlockComponentProps,
+} from "../blocks/cta-section/cta-section.component";
+import {
   FirstClassSoftwareBlockComponent,
   FirstClassSoftwareBlockComponentProps,
 } from "../blocks/first-class-software/first-class-software.component";
@@ -64,6 +68,16 @@ export const BlockRenderer = ({ blocks }: { blocks: StrapiBlock[] }) => {
             const currentBlock = block as FirstClassSoftwareBlockComponentProps;
             return (
               <FirstClassSoftwareBlockComponent
+                key={currentBlock.id}
+                {...currentBlock}
+              />
+            );
+          }
+
+          case BlockNames.ComponentBlocksCtaSection: {
+            const currentBlock = block as CtaSectionBlockComponentProps;
+            return (
+              <CtaSectionBlockComponent
                 key={currentBlock.id}
                 {...currentBlock}
               />

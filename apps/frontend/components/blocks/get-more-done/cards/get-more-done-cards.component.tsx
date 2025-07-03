@@ -10,7 +10,7 @@ export const GetMoreDoneCardsComponent = ({
         ({ id, icon: { url, alternativeText, height, width }, text }) => (
           <li
             key={id}
-            className="relative flex flex-col items-center justify-between gap-y-[30px] bg-[#D2FD9C] px-5 py-[30px]"
+            className="relative flex flex-col items-center justify-between gap-y-[30px] overflow-clip rounded-[10px] bg-[#D2FD9C] px-5 py-[30px]"
           >
             <ImageLoader
               src={url}

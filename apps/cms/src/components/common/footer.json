@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_common_footers",
+  "info": {
+    "displayName": "Footer"
+  },
+  "options": {},
+  "attributes": {
+    "website": {
+      "type": "component",
+      "component": "common.website",
+      "repeatable": false,
+      "required": true
+    },
+    "contactDetails": {
+      "type": "component",
+      "component": "common.link",
+      "repeatable": true,
+      "required": true
+    },
+    "Policies": {
+      "type": "component",
+      "component": "common.link",
+      "repeatable": true,
+      "required": true
+    }
+  },
+  "config": {}
+}

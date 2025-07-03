@@ -1,4 +1,4 @@
-import { SidebarBlockComponentProps } from "@/components/blocks/sidebar/sidebar.component";
+import { SidebarBlock } from "../sidebar.interface";
 
 export const SidebarHeadlineComponent = ({
   headline1,
@@ -6,7 +6,7 @@ export const SidebarHeadlineComponent = ({
   headline3,
   description,
 }: Pick<
-  SidebarBlockComponentProps,
+  SidebarBlock,
   "headline1" | "headline2" | "headline3" | "description"
 >) => {
   return (

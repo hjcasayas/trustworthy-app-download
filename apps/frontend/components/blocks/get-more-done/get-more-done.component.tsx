@@ -14,7 +14,7 @@ export const GetMoreDoneComponent = ({
   cards,
 }: GetMoreDoneComponentProps) => {
   return (
-    <section className="tablet:px-10 flex flex-col gap-y-[30px] px-5 py-20">
+    <section className="tablet:px-10 tablet:pb-0 desktop:pb-20 flex flex-col gap-y-[30px] px-5 py-20">
       <GetMoreDoneHeadingComponent {...{ headline, description }} />
       <GetMoreDoneCardsComponent {...{ cards }} />
     </section>

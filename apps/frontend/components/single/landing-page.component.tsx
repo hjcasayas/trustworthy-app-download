@@ -15,16 +15,8 @@ export const LandingPageComponent = () => {
     gqlQuery: landingPageQuery,
   });
 
-  if (data == null) {
-    return <p>No data available</p>;
-  }
-
-  if (isLoading) {
-    return <p>Loading...</p>;
-  }
-
-  if (isError) {
-    return <p>Error loading landing page</p>;
+  if (data == null || data.landingPage == null || isError || isLoading) {
+    return null;
   }
 
   return (

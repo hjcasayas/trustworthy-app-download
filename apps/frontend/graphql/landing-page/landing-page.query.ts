@@ -119,6 +119,22 @@ export const landingPageQuery = gql`
             height
           }
         }
+        ... on ComponentBlocksFirstClassSoftware {
+          __typename
+          id
+          headline
+          description
+          cards {
+            id
+            text
+            icon {
+              alternativeText
+              height
+              url
+              width
+            }
+          }
+        }
       }
     }
   }

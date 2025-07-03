@@ -2,7 +2,7 @@ import { ImageLoader } from "@/components/image-loader/image-loader.component";
 
 import { FirstClassSoftwareBlockComponentProps } from "../first-class-software.component";
 
-export const FirstClassSoftwareHeadingComponent = ({
+export const FirstClassSoftwareCardComponent = ({
   cards,
 }: Pick<FirstClassSoftwareBlockComponentProps, "cards">) => {
   return (

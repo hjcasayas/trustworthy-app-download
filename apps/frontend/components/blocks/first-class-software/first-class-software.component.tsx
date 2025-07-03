@@ -1,6 +1,7 @@
 import { StrapiBlock } from "@/components/strapi/strapi-block";
 
 import { FirstClassSoftwareHeadingComponent } from "./heading/first-class-software-heading.component";
+import { FirstClassSoftwareCardComponent } from "./cards/first-class-software-cards.component";
 import { FirstClassSoftwareBlock } from "./first-class-software.interface";
 
 export interface FirstClassSoftwareBlockComponentProps
@@ -18,11 +19,7 @@ export const FirstClassSoftwareBlockComponent = ({
         headline={headline}
         description={description}
       />
-      <FirstClassSoftwareHeadingComponent
-        headline={headline}
-        description={description}
-        {...{ cards }}
-      />
+      <FirstClassSoftwareCardComponent {...{ cards }} />
     </section>
   );
 };

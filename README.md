@@ -33,7 +33,3 @@ Drive downloads with this sleek app template. One page with all the key info—b
 5. Open Strapi app in http://localhost:1337
 
 ## Todos
-
-- [ ] Generate NextJS app using create-next-app@latest
-- [ ] Generate Strapi app use create-strapi@latest
-- [ ] Setup Tailwind CSS Theme based on Figma

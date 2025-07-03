@@ -1,6 +1,6 @@
 services:
   frontend:
-    image: hjcasayas/trustworthy-app-download-frontend:v1.0.0
+    image: hjcasayas/trustworthy-app-download-frontend:v1.0.1
     build:
       context: .
       dockerfile: ./apps/frontend/Dockerfile
@@ -8,16 +8,16 @@ services:
         NEXT_PUBLIC_STRAPI_URL: ${NEXT_PUBLIC_STRAPI_URL}
       tags:
         - hjcasayas/trustworthy-app-download-frontend:latest
-        - hjcasayas/trustworthy-app-download-frontend:v1.0.0
+        - hjcasayas/trustworthy-app-download-frontend:v1.0.1
       platforms:
         - linux/amd64
   cms:
-    image: hjcasayas/trustworthy-app-download-cms:v1.0.0
+    image: hjcasayas/trustworthy-app-download-cms:v1.0.1
     build:
       context: .
       dockerfile: ./apps/cms/Dockerfile
       tags:
         - hjcasayas/trustworthy-app-download-cms:latest
-        - hjcasayas/trustworthy-app-download-cms:v1.0.0
+        - hjcasayas/trustworthy-app-download-cms:v1.0.1
       platforms:
         - linux/amd64

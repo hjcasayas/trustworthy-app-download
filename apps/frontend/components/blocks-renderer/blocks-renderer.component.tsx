@@ -27,7 +27,7 @@ import { BlockNames } from "./block-name";
 
 export const BlockRenderer = ({ blocks }: { blocks: StrapiBlock[] }) => {
   return (
-    <main>
+    <>
       {blocks.map((block) => {
         switch (block.__typename) {
           case BlockNames.ComponentBlocksHeader: {
@@ -89,6 +89,6 @@ export const BlockRenderer = ({ blocks }: { blocks: StrapiBlock[] }) => {
           }
         }
       })}
-    </main>
+    </>
   );
 };

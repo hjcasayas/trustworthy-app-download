@@ -30,8 +30,10 @@ export const LandingPageComponent = () => {
   return (
     <div className="desktop:flex-row desktop:justify-center flex flex-col">
       <SidebarBlockComponent {...data.landingPage.sidebar} />
-      <BlockRenderer blocks={data.landingPage.blocks} />
-      <CommonFooterComponent {...data.landingPage.footer} />
+      <main>
+        <BlockRenderer blocks={data.landingPage.blocks} />
+        <CommonFooterComponent {...data.landingPage.footer} />
+      </main>
     </div>
   );
 };

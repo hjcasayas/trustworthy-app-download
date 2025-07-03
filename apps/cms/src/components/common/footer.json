@@ -5,22 +5,28 @@
   },
   "options": {},
   "attributes": {
-    "website": {
+    "websiteLogo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "websiteName": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images", "files"]
+    },
+    "policyLinks": {
       "type": "component",
-      "component": "common.website",
-      "repeatable": false,
+      "component": "common.link",
+      "repeatable": true,
       "required": true
     },
     "contactDetails": {
       "type": "component",
-      "component": "common.link",
-      "repeatable": true,
-      "required": true
-    },
-    "Policies": {
-      "type": "component",
-      "component": "common.link",
-      "repeatable": true,
+      "component": "footer.contact-details",
+      "repeatable": false,
       "required": true
     }
   },

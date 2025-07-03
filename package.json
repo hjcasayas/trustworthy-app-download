@@ -11,7 +11,12 @@
     "build:cms": "pnpm --filter @trustworthy-app-download/cms run build",
     "start:cms": "pnpm --filter @trustworthy-app-download/cms run start",
     "git:commit": "cz",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "docker:build": "docker compose -f docker-compose.build.yaml build frontend cms",
+    "docker:push": "docker compose -f docker-compose.build.yaml push frontend cms",
+    "docker:pull": "docker compose -f docker-compose.build.yaml pull frontend cms",
+    "docker:up": "docker compose -f docker-compose.deploy.yaml up -d",
+    "docker:down": "docker compose -f docker-compose.deploy.yaml down"
   },
   "keywords": [],
   "author": "",

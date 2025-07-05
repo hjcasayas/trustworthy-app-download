@@ -9,4 +9,30 @@ export default [
   "strapi::session",
   "strapi::favicon",
   "strapi::public",
+  {
+    name: "strapi::security",
+    config: {
+      contentSecurityPolicy: {
+        useDefaults: true,
+        directives: {
+          "connect-src": ["'self'", "https:"],
+          "img-src": [
+            "'self'",
+            "data:",
+            "blob:",
+            "market-assets.strapi.io",
+            `${process.env.MINIO_BUCKET}.s3.hjcasayas.info`,
+          ],
+          "media-src": [
+            "'self'",
+            "data:",
+            "blob:",
+            "market-assets.strapi.io",
+            `${process.env.MINIO_BUCKET}.s3.hjcasayas.info`,
+          ],
+          upgradeInsecureRequests: null,
+        },
+      },
+    },
+  },
 ];

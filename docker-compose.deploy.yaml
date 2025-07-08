@@ -3,7 +3,7 @@ services:
     depends_on:
       - cms
     restart: unless-stopped
-    image: hjcasayas/trustworthy-app-download-frontend:v1.1.1
+    image: hjcasayas/trustworthy-app-download-frontend:v1.2.1
     env_file:
       - ./.env
     environment:
@@ -14,7 +14,7 @@ services:
     depends_on:
       - db
     restart: unless-stopped
-    image: hjcasayas/trustworthy-app-download-cms:v1.1.1
+    image: hjcasayas/trustworthy-app-download-cms:v1.2.1
     env_file:
       - ./.env
     environment:

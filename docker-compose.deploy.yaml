@@ -34,6 +34,8 @@ services:
       - JWT_SECRET=${JWT_SECRET}
       - STRAPI_TRANSFER_URL=${STRAPI_TRANSFER_URL}
       - STRAPI_TRANSFER_TOKEN=${STRAPI_TRANSFER_TOKEN}
+    volumes:
+      - ./cms-uploads:/app/apps/cms/public/uploads
 
   db:
     image: postgres
